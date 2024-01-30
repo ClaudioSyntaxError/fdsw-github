@@ -108,6 +108,10 @@ nav.scroll{
 .logo:hover, .links:hover{
   color: #D7A319;
 }
+
+.hamburger{
+  display: none;
+}
 /* fin edit nav */
 
 /* comienzo edit home section */
@@ -273,10 +277,6 @@ nav.scroll{
   box-shadow: 10px 5px 5px #15080f;
 }
 
-.card:hover{
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-}
-
 .img__card img{
   max-width: 300px;
   max-height: auto;
@@ -417,7 +417,6 @@ label{
     font-size: 80%;
   }
   nav{
-    flex-direction: column;
     gap: 1em;
   }
   .nav__link{
@@ -444,7 +443,7 @@ label{
     padding: 1em 1em 0 1em;
     color: #F6F6F6;
   }
-  .card{
+  .cards{
     flex-wrap: wrap;
   }
   .img__card img{
@@ -476,6 +475,25 @@ label{
   }
 }
 
+
+@media screen and (max-width: 768px){
+  .hamburger{
+    display: block;
+    cursor: pointer;
+  }
+
+  .line{
+    width: 30px;
+    height: 3px;
+    margin: 6px 0;
+    background-color: #F6F6F6;
+  }
+
+  .link__container{
+    display: none;
+  }
+}
+
 @media screen and (width: 768px){
   nav{
     gap: 1em;
@@ -493,6 +511,12 @@ label{
     gap: 1em;
     padding: 20em 1em;
   }
+  .input__form, .textarea{
+    width: 40em;
+  }
+}
+
+@media screen and (width: 1024px) {
   .input__form, .textarea{
     width: 40em;
   }

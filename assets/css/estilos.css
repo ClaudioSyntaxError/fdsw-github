@@ -365,18 +365,6 @@ nav.scroll{
   gap: 5em;
 }
 
-.form__container{
-  display: flex;
-  color: #000000;
-  font-weight: 700;
-  justify-content: center;
-}
-
-form{
-  background-color: #D7A319;
-  padding: 10em;
-}
-
 /* fin edit contact section */
 
 /* comienzo edit responsivo */

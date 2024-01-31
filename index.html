@@ -15,11 +15,6 @@
       <div class="logo__container">
         <a href="index.html" class="logo">Portafolio</a>
       </div>
-      <div class="hamburger">
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-      </div>
       <div class="link__container">
         <ul class="nav__link">
           <li class="nav__item">
@@ -217,18 +212,18 @@
           <h4 class="subtitle">No dude en ponerse en contacto conmigo enviando el siguiente formulario y me comunicaré con usted lo antes posible.</h4>
         </div>
         <div class="form__container">
-          <form>
+          <form id="form" action="">
             <div class="input__container">
               <label for="name">Nombre</label>
-              <input type="text"  id="name" class="input__form" placeholder="Ingresa tu nombre" required>
+              <input type="text" name="name" id="name" class="input__form" placeholder="Ingresa tu nombre" required>
             </div>
             <div class="input__container">
               <label for="email">Correo electrónico</label>
-              <input type="email"  id="emil" class="input__form" placeholder="Ingresa tu correo" required>
+              <input type="email" name="email" id="email" class="input__form" placeholder="Ingresa tu correo" required>
             </div>
             <div class="input__container">
               <label for="mensaje">Mensaje</label>
-              <textarea class="textarea" id="mensaje" cols="30" rows="10" placeholder="Ingresa tu mensaje" required></textarea>
+              <textarea class="textarea" name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Ingresa tu mensaje" required></textarea>
             </div>
             <div class="form-btn__container">
               <button type="submit" class="principal__button form__button">Enviar</button>
@@ -238,7 +233,40 @@
       </div>
     </section>
   </main>
-
+  <footer>
+    <div class="footer__container">
+      <div class="info__container">
+        <h4>Claudio Poblete</h4>
+        <div class="bar__title"></div>
+        <p>Desarrollador Full Stack con experiencia en tecnologías
+          web frontend (HTML, CSS, JavaScript, React) y backend
+          (Node.js, Express.js, MongoDB). Especializado en diseño
+          responsive.</p>
+      </div>
+      <div class="social__container">
+        <h4>Mis redes</h4>
+        <div class="bar__title"></div>
+        <div class="rrss__container">
+          <div class="rrss">
+            <a href="https://github.com/ClaudioSyntaxError?tab=repositories" class="social__link" target="_blank">
+              <i class="fa-brands fa-github fa-2xl"></i>
+              <p>GitHub</p>
+            </a>
+          </div>
+          <div class="rrss">
+            <a href="https://www.linkedin.com/in/claudio-poblete-lagos/" class="social__link" target="_blank">
+              <i class="fa-brands fa-linkedin fa-2xl"></i>
+              <p>LinkedIn</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <hr>
+      <p>© Copyright 2024. Hecho por <a href="index.html">Claudio Poblete</a></p>
+    </div>
+  </footer>
 
 
 
